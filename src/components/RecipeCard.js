@@ -4,29 +4,17 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const RecipeCard = (props, key) => {
 	const openRecipe = () => window.open(`${props.url}`, "_blank");
 
+	const str = props.name.split(" ");
+	const name = `${str[0]} ${str[1]} ${str[2]}...`;
+
 	return (
 		<div
 			key={key}
 			onClick={openRecipe}
-			className="w-[360px] cursor-pointer h-[470px] bg-white rounded-2xl shadow-xl hover:shadow-teal-100"
+			className={`bg-[url('${props.img}')] h-60 w-52 cursor-pointer   rounded-2xl shadow-xl flex flex-col justify-end bg-center hover:shadow-slate-300`}
 		>
-			<div>
-				<span>
-					<LazyLoadImage
-						className=" rounded-t-2xl w-[360px] bg-center"
-						loading=" lazy"
-						src={props.img}
-						alt="laksjsf"
-					/>
-				</span>
-
-				<div className="p-5 flex flex-col items-center">
-					<span>
-						<h5 className="mb-2 text-2xl  text-center font-thin tracking-tight text-gray-700 ">
-							{props.name}
-						</h5>
-					</span>
-				</div>
+			<div className="rounded-b-2xl bg-black  w-52 h-16 opacity-80 hover:opacity-100  text-white  text-center font-thin tracking-tight  flex justify-center items-center ">
+				<h5 className="">{name}</h5>
 			</div>
 		</div>
 	);

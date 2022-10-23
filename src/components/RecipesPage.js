@@ -27,10 +27,9 @@ const RecipesPage = () => {
 
 	return (
 		<>
-			<div className="my-20  font-thin text-5xl">{currentName}</div>
-			<div className="  gap-12  flex-wrap w-11/12 flex ">
+			<div className="my-10  font-thin text-4xl">{currentName}</div>
+			<div className=" justify-center gap-10  flex-wrap w-11/12 flex ">
 				{statetrendingRecipes.map((rec) => {
-					const RecipeId = rec.recipe.uri.split("#");
 					const recipeUrl = rec.recipe.url;
 
 					return (

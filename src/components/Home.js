@@ -6,8 +6,9 @@ import RecipesPage from "./RecipesPage";
 const Home = () => {
 	return (
 		<>
-			<div className="flex bg-cyan-50  border-2 flex-col p-7  items-center justify-center">
-				<div className="text-5xl p-5 font-thin ">Recipe Finder App</div>
+			<div className="flex  flex-col p-3   items-center justify-center">
+				<div className="text-5xl p-3  font-thin ">Recipe Finder App</div>
+				<p></p>
 				<SearchBar />
 				<CatagorySlider />
 				<RecipesPage />

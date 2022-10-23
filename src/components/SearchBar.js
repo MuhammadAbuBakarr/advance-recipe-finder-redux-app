@@ -28,7 +28,7 @@ const SearchBar = () => {
 
 	return (
 		<>
-			<div className="w-6/12">
+			<div className="w-6/12 mt-3">
 				<label
 					htmlFor="default-search"
 					className="mb-2 text-sm font-medium text-gray-900 sr-only "

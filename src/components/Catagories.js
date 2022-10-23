@@ -27,8 +27,8 @@ const Catagories = (props, key) => {
 				onClick={fetchCatData}
 				className="mt-6 cursor-pointer hover:opacity-80"
 			>
-				<div className="bg-emerald-600 flex items-center justify-center text-center w-20 h-20 rounded-full">
-					<div className="w-14 opacity-90 h-14">
+				<div className="bg-emerald-600 flex items-center justify-center text-center w-16 h-16 rounded-full">
+					<div className="w-12 opacity-90 h-12">
 						<img src={props.img} />
 					</div>
 				</div>
